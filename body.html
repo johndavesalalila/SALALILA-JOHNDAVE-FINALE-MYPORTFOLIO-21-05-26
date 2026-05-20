@@ -1,0 +1,62 @@
+<!-- body.html - Main content showcasing work and achievements -->
+<div class="container">
+  <!-- Hero Section: horizontal button group + profile -->
+  <section id="home" class="hero">
+    <img class="profile-img" src="images/profile.jpg" alt="John Dave profile" onerror="this.src='https://placehold.co/140x140/5a3e2c/c0824b?text=JD'">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Explore my work, skills, and projects.</p>
+    <div class="button-group">
+      <button class="btn btn-primary" onclick="scrollToSection('contact')">📩 Contact Me</button>
+      <button class="btn btn-outline" onclick="scrollToSection('projects')">🚀 View Projects</button>
+    </div>
+  </section>
+
+  <!-- About Me section: horizontal LinkedIn + Download CV row -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Web Developer. Creating beautiful and functional digital experiences.</p>
+    <div class="about-links">
+      <a href="https://linkedin.com" target="_blank" class="about-link">🔗 LinkedIn</a>
+      <a href="images/cv.pdf" download class="about-link">📄 Download CV</a>
+    </div>
+  </section>
+
+  <!-- Featured Projects: 3 cards in horizontal / flex row -->
+  <section id="projects" class="projects">
+    <h2>⭐ Featured Projects</h2>
+    <div class="projects-grid">
+      <!-- Project 1: Story Adventure Game -->
+      <div class="project-card">
+        <img class="project-img" src="images/game.png" alt="Story Adventure Game" onerror="this.src='https://placehold.co/320x180/5a3e2c/c0824b?text=Adventure+Game'">
+        <h3>Story Adventure Game</h3>
+        <p>Story Adventure Game development project.<br>Interactive narrative & choices.</p>
+        <a href="https://github.com" target="_blank" class="github-link">📂 GitHub</a>
+      </div>
+      <!-- Project 2: Photo Editing -->
+      <div class="project-card">
+        <img class="project-img" src="images/basketball.png" alt="Photo & Graphic Manipulation" onerror="this.src='https://placehold.co/320x180/5a3e2c/c0824b?text=Photo+Editing'">
+        <h3>Photo & Graphic Manipulation</h3>
+        <p>Photo editing project. Advanced retouching & graphic design.</p>
+        <a href="https://github.com" target="_blank" class="github-link">📂 GitHub</a>
+      </div>
+      <!-- Project 3: Database System -->
+      <div class="project-card">
+        <img class="project-img" src="images/database.png" alt="Database System" onerror="this.src='https://placehold.co/320x180/5a3e2c/c0824b?text=Database+System'">
+        <h3>Database System</h3>
+        <p>Database System recording appointments project.<br>Full CRUD + calendar view.</p>
+        <a href="https://github.com" target="_blank" class="github-link">📂 GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section (simple form, horizontally aligned button) -->
+  <section id="contact" class="contact">
+    <h2>📬 Get in Touch</h2>
+    <form class="contact-form" id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email address" required>
+      <textarea placeholder="Your message..."></textarea>
+      <button type="submit" class="submit-btn">Send Message →</button>
+    </form>
+  </section>
+</div>
